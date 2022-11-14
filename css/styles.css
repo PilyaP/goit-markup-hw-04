@@ -8,6 +8,8 @@
     --fon-footer: #2F303A;
     --botton-two: #F5F4FA;
     --border: #EEEEEE;
+    --icon-fill: #AFB1B8;
+    --icon-footer:rgba(255, 255, 255, 0.1);
     
 
 }
@@ -137,15 +139,19 @@ background-color: var(--fon-footer);
     letter-spacing: 0.02em;
     color: var(--gray);
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.padding-zero{
-padding-top: 0;   
-padding-bottom: 94px; 
-}
 
+.section.padding-zero{
+padding-top: 0;    
+}
+.header-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
 
 
 
@@ -166,8 +172,16 @@ padding-bottom: 94px;
 .color-section
 {
     padding: 200px 0;
-    background: var(--fon-footer);
-}
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)
+    ), url(../images/imgsection.jpg);
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    }
+    .icon-wrap{
+
+    }
 .button-section-index
 {
 font-weight: 700;
@@ -241,6 +255,7 @@ text-align: center;
     display: flex;
     gap: 30px;
 }
+
 .box-item
 {
     width: calc((100% - 60px)/3);
@@ -291,9 +306,39 @@ font-size: 16px;
 line-height: 1.1875;
 color: var(--gray);
 text-align: center;
+margin-bottom: 16px;
 }
+.team-list-icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 
+}
+.team-icon-item{
+    width: 44px;
+    height: 44px;
+}
+.team-link-icon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icon-fill);
+    border-radius: 50%;
+    background-color: transparent;
+    
 
+}
+.team-link-icon:hover, 
+.team-link-icon:focus
+{
+color: var(--white);
+background-color: var(--blue);
+}
+.team-icon{
+    fill: currentColor;
+}
 .button-portfolio {
 font-family: inherit;
 cursor: pointer;
@@ -311,6 +356,7 @@ border-radius: 4px;
 {
 background-color: var(--blue);
 color: var(--white);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-title {
 font-size: 18px;
@@ -323,6 +369,53 @@ margin-bottom: 4px;
     font-size: 16px;
     line-height: 1.875;
     color: var(--gray); 
+}
+.item-portfolio-link
+{
+display: block;
+text-decoration: none;
+color: inherit;
+}
+.item-portfolio-link:hover,
+.item-portfolio-link:focus
+{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.hero-last-section {
+    font-size: 36px;
+line-height: 1.1666;
+text-align: center;
+margin-bottom: 50px;
+
+}
+.clien-list {
+    display: flex;
+    gap: 30px;
+}
+.clien-item {
+    width: 170px;
+    height: 92px;
+}
+.link-clien {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-fill);
+    border-radius: 4px;
+    color: var(--icon-fill);
+
+}
+.link-clien:hover,
+.link-clien:focus
+{
+    color: var(--blue);
+    border-color: var(--blue);
+}
+.icon-client {
+    fill: currentColor;
+
 }
 
 
@@ -363,6 +456,17 @@ padding-bottom: 94px;
 {
     display: flex;
     gap: 30px;
+
+}
+.icon-wrap{
+    
+    height: 120px;
+    background-color:var(--botton-two);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 .button-list
 {
@@ -406,5 +510,58 @@ padding-bottom: 94px;
 .footer-text:hover
 {
     color: var(--blue);
+
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+
+}
+.footer-soc-link {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background-color: var(--icon-footer);
+
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus
+{
+    background-color: var(--blue);
+}
+
+.footer-soc-icon {
+    fill: var(--white);
+
+}
+.footer-soc-list
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+.foter-container
+{
+    display: flex;
+    align-items: baseline;
+}
+.benefits-footer
+{
+font-weight: 700;
+line-height: calc(16 / 14);
+text-transform: uppercase;
+color: var(--white);
+margin-bottom: 20px;
+
+}
+.address-wrap
+{
+    margin-right: 70px;
 
 }
